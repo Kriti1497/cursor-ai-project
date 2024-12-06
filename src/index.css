@@ -7,6 +7,8 @@
   --primary-color-dark: #0b5ed7;
   --border-color: #dee2e6;
   --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
 }
 
 :root[data-theme="dark"] {
@@ -18,6 +20,8 @@
   --primary-color-dark: #0b5ed7;
   --border-color: #495057;
   --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
 }
 
 body {
