@@ -1,0 +1,66 @@
+.page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text-primary);
+}
+
+.page h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.page p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.page ul {
+  margin: 1rem 0;
+  padding-left: 2rem;
+  color: var(--text-secondary);
+}
+
+.page li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-2px);
+}
+
+.contact-method .icon {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: var(--background-primary);
+  border-radius: 8px;
+}
+
+.contact-method h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.contact-method p {
+  margin: 0;
+  font-size: 0.9rem;
+} 

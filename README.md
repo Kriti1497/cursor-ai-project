@@ -1,46 +1,124 @@
-# Getting Started with Create React App
+# React TypeScript Authentication App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack application demonstrating user authentication, theme switching, and protected routes using React, TypeScript, and Node.js.
+
+## Features
+
+- User authentication with JWT
+- Dark/Light theme switching
+- Protected routes
+- Responsive sidebar navigation
+- Modern UI design
+
+## Tech Stack
+
+### Frontend
+- React
+- TypeScript
+- CSS3
+- Context API for state management
+
+### Backend
+- Node.js
+- Express
+- JWT for authentication
+- bcrypt for password hashing
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd my-first-cursor-app
+```
+
+2. Install frontend dependencies:
+```bash
+npm install
+```
+
+3. Install backend dependencies:
+```bash
+cd backend
+npm install
+```
+
+4. Create environment files:
+
+Frontend (.env):
+```
+REACT_APP_API_URL=http://localhost:5001/api
+```
+
+Backend (.env):
+```
+PORT=5001
+JWT_SECRET=your-super-secret-key-change-this-in-production
+```
+
+### Running the Application
+
+1. Start the backend server:
+```bash
+cd backend
+npm run dev
+```
+
+2. In a new terminal, start the frontend:
+```bash
+npm start
+```
+
+The application will be available at `http://localhost:3000`
+
+### Test Credentials
+```
+Username: admin
+Password: admin123
+```
+
+## Project Structure
+
+```
+my-first-cursor-app/
+├── src/
+│   ├── components/      # React components
+│   ├── contexts/        # Context providers
+│   ├── pages/          # Page components
+│   └── ...
+├── backend/
+│   ├── routes/         # API routes
+│   ├── server.js       # Express server
+│   └── ...
+└── ...
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start` - Runs the frontend in development mode
+- `npm build` - Builds the frontend for production
+- `npm test` - Runs the test suite
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In the backend directory:
+- `npm run dev` - Runs the backend with nodemon
+- `npm start` - Runs the backend in production mode
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Contributing
 
-### `npm test`
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
